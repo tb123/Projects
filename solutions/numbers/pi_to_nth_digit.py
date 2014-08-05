@@ -1,6 +1,5 @@
 import unittest
 
-
 def calculate_pi(N):
     """ Uses the Bailey-Borwein-Plouffe formula to calculate Pi to a given number of digits.
     """
@@ -11,6 +10,7 @@ def calculate_pi(N):
     if N > 0:
         return str(pi)[:N+2]
     return str(int(pi))
+
 
 class CalculatePiTests(unittest.TestCase):
     """ Some tests to check that the basic requirements for this
